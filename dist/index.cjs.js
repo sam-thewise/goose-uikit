@@ -1886,9 +1886,8 @@ var Icon$P = function (props) {
 };
 
 var Logo = function (_a) {
-    var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React__default['default'].createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
+    _a.isDark; __rest(_a, ["isDark"]);
+    return (React__default['default'].createElement("image", { href: '/images/egg/LogoTextNewWhite.png' }));
 };
 
 var Icon$Q = function (props) {
@@ -2091,7 +2090,7 @@ var Logo$1 = function (_a) {
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$q, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
-    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
+    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "The Dragon's Lair - Home" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "The Dragon's Lair - Home" }, innerLogo))));
 };
 var templateObject_1$x;
 

@@ -2073,11 +2073,13 @@ var StyledLink$1 = styled(Link$1)(templateObject_1$x || (templateObject_1$x = __
 });
 var Logo$1 = function (_a) {
     _a.isPushed; _a.togglePush; var isDark = _a.isDark, href = _a.href;
-    var isAbsoluteUrl = href.startsWith("http");
-    var innerLogo = (React.createElement(React.Fragment, null,
+    href.startsWith("http");
+    (React.createElement(React.Fragment, null,
         React.createElement(Icon$q, { className: "mobile-icon" }),
         React.createElement(Logo, { className: "desktop-icon", isDark: isDark })));
-    return (React.createElement(Flex, null, isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "The Dragon's Lair - Home" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "The Dragon's Lair - Home" }, innerLogo))));
+    return (React.createElement(Flex, null,
+        React.createElement(StyledLink$1, { as: "a", href: "/", "aria-label": "The Dragon's Lair - Home" },
+            React.createElement("img", { src: '/images/egg/LogoTextNewWhite.png', alt: "The Dragon's Lair" }))));
 };
 var templateObject_1$x;
 

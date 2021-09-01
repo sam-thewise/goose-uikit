@@ -2086,11 +2086,13 @@ var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObjec
 });
 var Logo$1 = function (_a) {
     _a.isPushed; _a.togglePush; var isDark = _a.isDark, href = _a.href;
-    var isAbsoluteUrl = href.startsWith("http");
-    var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
+    href.startsWith("http");
+    (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$q, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
-    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "The Dragon's Lair - Home" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "The Dragon's Lair - Home" }, innerLogo))));
+    return (React__default['default'].createElement(Flex, null,
+        React__default['default'].createElement(StyledLink$1, { as: "a", href: "/", "aria-label": "The Dragon's Lair - Home" },
+            React__default['default'].createElement("img", { src: '/images/egg/LogoTextNewWhite.png', alt: "The Dragon's Lair" }))));
 };
 var templateObject_1$x;
 

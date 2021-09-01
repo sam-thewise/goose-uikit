@@ -15,7 +15,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;

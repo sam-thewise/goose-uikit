@@ -71,6 +71,21 @@ const PriceLink = styled.a`
   }
 `;
 
+const InfoContainer = styled.div`
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+`;
+
+const InfoBoxes = styled.div`
+  width: 48%;
+  margin-bottom: 2%;
+
+  :nth-child(3n){
+    width: 100%;
+  }
+`;
+
 const Menu: React.FC<NavProps> = ({
   account,
   login,
@@ -133,21 +148,25 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        <Flex>
-          {cakePriceUsd ? (
-            <PriceLink href={priceLink} target="_blank">
-              <PancakeRoundIcon width="24px" mr="8px" />
-              <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
-            </PriceLink>
-          ) : (
-            <Skeleton width={80} height={24} />
-          )}
-          <UserBlock account={account} login={login} logout={logout} />
-          {profile && <Avatar profile={profile} />}
-        </Flex>
-        <Flex>
-          TVL ETC
-        </Flex>
+        <InfoContainer>
+          <InfoBoxes>
+            {cakePriceUsd ? (
+              <PriceLink href={priceLink} target="_blank">
+                <PancakeRoundIcon width="24px" mr="8px" />
+                <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+              </PriceLink>
+            ) : (
+              <Skeleton width={80} height={24} />
+            )}
+          </InfoBoxes>
+          <InfoBoxes>
+            <UserBlock account={account} login={login} logout={logout} />
+            {profile && <Avatar profile={profile} />}
+          </InfoBoxes>
+          <InfoBoxes>
+            <p>TVL ETC</p>
+          </InfoBoxes>
+        </InfoContainer>
       </StyledNav>
       <BodyWrapper>
         <Panel

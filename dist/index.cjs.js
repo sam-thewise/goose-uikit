@@ -2705,6 +2705,8 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 |
     return theme.mediaQueries.nav;
 });
 var PriceLink$1 = styled__default['default'].a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
+var InfoContainer = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n"], ["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n"])));
+var InfoBoxes = styled__default['default'].div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  width: 48%;\n  margin-bottom: 2%;\n\n  :nth-child(3n){\n    width: 100%;\n  }\n"], ["\n  width: 48%;\n  margin-bottom: 2%;\n\n  :nth-child(3n){\n    width: 100%;\n  }\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children;
@@ -2746,19 +2748,21 @@ var Menu = function (_a) {
     return (React__default['default'].createElement(Wrapper$1, null,
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
-            React__default['default'].createElement(Flex, null,
-                cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: priceLink, target: "_blank" },
+            React__default['default'].createElement(InfoContainer, null,
+                React__default['default'].createElement(InfoBoxes, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: priceLink, target: "_blank" },
                     React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
-                    React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
-                React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
-                profile && React__default['default'].createElement(Avatar, { profile: profile })),
-            React__default['default'].createElement(Flex, null, "TVL ETC")),
+                    React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+                React__default['default'].createElement(InfoBoxes, null,
+                    React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
+                    profile && React__default['default'].createElement(Avatar, { profile: profile })),
+                React__default['default'].createElement(InfoBoxes, null,
+                    React__default['default'].createElement("p", null, "TVL ETC")))),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8;
 
 var ToastAction = function (_a) {
     var action = _a.action;

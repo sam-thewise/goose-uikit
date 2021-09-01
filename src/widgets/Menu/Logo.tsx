@@ -32,14 +32,6 @@ const StyledLink = styled(Link)`
 `;
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
-  const isAbsoluteUrl = href.startsWith("http");
-  const innerLogo = (
-    <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithText className="desktop-icon" isDark={isDark} />
-    </>
-  );
-
   return (
     <Flex>
         <StyledLink as="a" href="/" aria-label="The Dragon's Lair - Home">

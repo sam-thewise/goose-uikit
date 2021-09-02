@@ -29,6 +29,9 @@ const StyledLink = styled(Link)`
       display: block;
     }
   }
+  img {
+    height: 50%;
+  }
 `;
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {

@@ -29,7 +29,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-left: 8px;
   padding-right: 16px;
   width: 100%;
-  height:225px;
+  height:112px;
   background-color: rgba(97,105,182,0.5);
   z-index: 20;
   transform: translate3d(0, 0, 0);
@@ -42,7 +42,7 @@ const BodyWrapper = styled.div`
 
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-grow: 1;
-  margin-top: 225px;
+  margin-top: 112px;
   transition: margin-top 0.2s;
   transform: translate3d(0, 0, 0);
 `;

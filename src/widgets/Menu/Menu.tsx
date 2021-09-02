@@ -16,7 +16,9 @@ import Text from "../../components/Text/Text";
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  background: url('/images/dragon-background.jpg') #050e15 no-repeat center center cover;
+  background: #050e15 url('/images/dragon-background.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size:cover;
 `;
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`

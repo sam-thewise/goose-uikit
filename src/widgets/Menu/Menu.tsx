@@ -83,7 +83,11 @@ const InfoBoxes = styled.div`
   width: 48%;
   margin-bottom: 2%;
 
-  :nth-child(3n){
+  .paladin img{
+    max-width: 200px;
+  }
+
+  :nth-child(4n){
     width: 100%;
   }
 `;
@@ -156,12 +160,11 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+       
         <InfoContainer>
-          <InfoBoxes>
+          <InfoBoxes className="paladin">
             <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></Link>
           </InfoBoxes>
-        </InfoContainer>
-        <InfoContainer>
           <InfoBoxes>
             {cakePriceUsd ? (
               <PriceLink href={priceLink} target="_blank">

@@ -2693,7 +2693,7 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 |
 });
 var PriceLink$1 = styled__default['default'].a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var InfoContainer = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n"], ["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n"])));
-var InfoBoxes = styled__default['default'].div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  width: 48%;\n  margin-bottom: 2%;\n\n  :nth-child(3n){\n    width: 100%;\n  }\n"], ["\n  width: 48%;\n  margin-bottom: 2%;\n\n  :nth-child(3n){\n    width: 100%;\n  }\n"])));
+var InfoBoxes = styled__default['default'].div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .paladin img{\n    max-width: 200px;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"], ["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .paladin img{\n    max-width: 200px;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
@@ -2736,10 +2736,9 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(InfoContainer, null,
-                React__default['default'].createElement(InfoBoxes, null,
+                React__default['default'].createElement(InfoBoxes, { className: "paladin" },
                     React__default['default'].createElement(Link, { href: paladinAuditLink, target: "_blank" },
-                        React__default['default'].createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "200" })))),
-            React__default['default'].createElement(InfoContainer, null,
+                        React__default['default'].createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "200" }))),
                 React__default['default'].createElement(InfoBoxes, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: priceLink, target: "_blank" },
                     React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
                     React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),

@@ -12,6 +12,7 @@ import Skeleton from "../../components/Skeleton/Skeleton";
 import { NavProps } from "./types";
 import Avatar from "./Avatar";
 import Text from "../../components/Text/Text";
+import { Link } from "../../components/Link";
 
 const Wrapper = styled.div`
   position: relative;
@@ -157,7 +158,7 @@ const Menu: React.FC<NavProps> = ({
         />
         <InfoContainer>
           <InfoBoxes>
-            <a href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></a>
+            <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></Link>
           </InfoBoxes>
         </InfoContainer>
         <InfoContainer>

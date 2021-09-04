@@ -46,4 +46,10 @@ export interface NavProps extends PanelProps {
     login: Login;
     profile?: Profile;
     logout: () => void;
+    totalTVL?: number;
+    circSupply?: number;
+    marketCap?: number;
+    eggPerBlock?: number;
+    paladinAuditLink?: string;
+    rugDocLink?: string;
 }

@@ -2696,7 +2696,7 @@ var InfoContainer = styled__default['default'].div(templateObject_7 || (template
 var InfoBoxes = styled__default['default'].div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  width: 48%;\n  margin-bottom: 2%;\n\n  :nth-child(3n){\n    width: 100%;\n  }\n"], ["\n  width: 48%;\n  margin-bottom: 2%;\n\n  :nth-child(3n){\n    width: 100%;\n  }\n"])));
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = React.useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -2735,6 +2735,10 @@ var Menu = function (_a) {
     return (React__default['default'].createElement(Wrapper$1, null,
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React__default['default'].createElement(InfoContainer, null,
+                React__default['default'].createElement(InfoBoxes, null,
+                    React__default['default'].createElement(Link, { href: paladinAuditLink, target: "_blank" },
+                        React__default['default'].createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "200" })))),
             React__default['default'].createElement(InfoContainer, null,
                 React__default['default'].createElement(InfoBoxes, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: priceLink, target: "_blank" },
                     React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),

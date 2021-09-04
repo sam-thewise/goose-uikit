@@ -162,8 +162,10 @@ const Menu: React.FC<NavProps> = ({
         />
        
         <InfoContainer>
-          <InfoBoxes className="paladin">
-            <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></Link>
+          <InfoBoxes>
+            <div className="paladin">
+              <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></Link>
+            </div>
           </InfoBoxes>
           <InfoBoxes>
             {cakePriceUsd ? (

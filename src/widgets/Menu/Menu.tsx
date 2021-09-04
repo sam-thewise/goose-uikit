@@ -100,6 +100,12 @@ const Menu: React.FC<NavProps> = ({
   links,
   priceLink,
   profile,
+  paladinAuditLink,
+  rugDocLink,
+  totalTVL,
+  circSupply,
+  marketCap,
+  eggPerBlock,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -149,6 +155,11 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+        <InfoContainer>
+          <InfoBoxes>
+            <a href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></a>
+          </InfoBoxes>
+        </InfoContainer>
         <InfoContainer>
           <InfoBoxes>
             {cakePriceUsd ? (

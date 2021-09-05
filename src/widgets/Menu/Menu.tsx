@@ -87,6 +87,10 @@ const InfoBoxes = styled.div`
   width: 48%;
   margin-bottom: 2%;
 
+  .farm-stat{
+    background: rgba(0,0,0,0.75);
+  }
+
   .paladin img{
     max-width: 200px;
   }
@@ -188,7 +192,9 @@ const Menu: React.FC<NavProps> = ({
             {profile && <Avatar profile={profile} />}
           </InfoBoxes>
           <InfoBoxes>
-            <p>TVL ETC</p>
+            <div className="farm-stat">
+              <Text>TVL: ${totalTVL}</Text>
+            </div>
           </InfoBoxes>
         </InfoContainer>
       </StyledNav>

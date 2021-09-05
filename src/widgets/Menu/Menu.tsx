@@ -85,7 +85,6 @@ const InfoContainer = styled.div`
 
 const InfoBoxes = styled.div`
   width: 65%;
-  margin-bottom: 2%;
 
   .farm-stat{
     background: rgba(0,0,0,0.75);

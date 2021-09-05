@@ -39,11 +39,13 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   z-index: 20;
   border-bottom: 2px solid #efcd52;
   transform: translate3d(0, 0, 0);
+  overflow: hidden;
 `;
 
 const BodyWrapper = styled.div`
   position: relative;
   display: flex;
+  overflow: overlay;
 `;
 
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`

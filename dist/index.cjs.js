@@ -2675,11 +2675,11 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 |
     return theme.mediaQueries.nav;
 });
 var PriceLink$1 = styled__default['default'].a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-var InfoContainer = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n"], ["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n"])));
+var InfoContainer = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n  width: 20%;\n"], ["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n  width: 20%;\n"])));
 var InfoBoxes = styled__default['default'].div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .paladin img{\n    max-width: 200px;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"], ["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .paladin img{\n    max-width: 200px;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"])));
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; var totalTVL = _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = React.useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -2729,12 +2729,7 @@ var Menu = function (_a) {
                     React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
                 React__default['default'].createElement(InfoBoxes, null,
                     React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
-                    profile && React__default['default'].createElement(Avatar, { profile: profile })),
-                React__default['default'].createElement(InfoBoxes, null,
-                    React__default['default'].createElement("div", { className: "farm-stat" },
-                        React__default['default'].createElement(Text, null,
-                            "TVL: $",
-                            totalTVL))))),
+                    profile && React__default['default'].createElement(Avatar, { profile: profile })))),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),

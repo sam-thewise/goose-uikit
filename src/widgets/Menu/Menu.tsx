@@ -81,6 +81,7 @@ const InfoContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
+  width: 20%;
 `;
 
 const InfoBoxes = styled.div`
@@ -191,11 +192,6 @@ const Menu: React.FC<NavProps> = ({
           <InfoBoxes>
             <UserBlock account={account} login={login} logout={logout} />
             {profile && <Avatar profile={profile} />}
-          </InfoBoxes>
-          <InfoBoxes>
-            <div className="farm-stat">
-              <Text>TVL: ${totalTVL}</Text>
-            </div>
           </InfoBoxes>
         </InfoContainer>
       </StyledNav>

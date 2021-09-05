@@ -50,7 +50,7 @@ const StyledButton = styled.button<ButtonProps>`
   background-color: rgb(97,105,182);
   border-radius: 8px;
   border: none !important;
-  box-shadow: ${getButtonVariantProp("boxShadow")};
+  box-shadow: inset 0 -4px 1px 0 rgb(42 53 140 / 70%);
   color: #fff;
   cursor: pointer;
   display: inline-flex;
@@ -71,6 +71,8 @@ const StyledButton = styled.button<ButtonProps>`
 
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     background-color: #858dd9;
+    box-shadow: inset 0 -3px 1px 0 rgb(42 53 140 / 50%);
+    line-height: 20;
   }
 
   &:focus:not(:active) {

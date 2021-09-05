@@ -2663,7 +2663,7 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$
 });
 var PriceLink$1 = styled.a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var InfoContainer = styled.div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n  width: 20%;\n"], ["\n  flex-wrap: wrap;\n  justify-content: space-between;\n  display: flex;\n  width: 20%;\n"])));
-var InfoBoxes = styled.div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .paladin img{\n    max-width: 200px;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"], ["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .paladin img{\n    max-width: 200px;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"])));
+var InfoBoxes = styled.div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"], ["\n  width: 48%;\n  margin-bottom: 2%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  :nth-child(4n){\n    width: 100%;\n  }\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
@@ -2707,9 +2707,8 @@ var Menu = function (_a) {
             React.createElement(Logo, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(InfoContainer, null,
                 React.createElement(InfoBoxes, null,
-                    React.createElement("div", { className: "paladin" },
-                        React.createElement(Link, { href: paladinAuditLink, target: "_blank" },
-                            React.createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "200" }))))),
+                    React.createElement(Link, { href: paladinAuditLink, target: "_blank" },
+                        React.createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", width: "150" })))),
             React.createElement(InfoContainer, null,
                 React.createElement(InfoBoxes, null, cakePriceUsd ? (React.createElement(PriceLink$1, { href: priceLink, target: "_blank" },
                     React.createElement(Icon$v, { width: "42px", mr: "8px" }),

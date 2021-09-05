@@ -80,10 +80,7 @@ const PriceLink = styled.a`
 `;
 
 const InfoContainer = styled.div`
-  flex-wrap: wrap;
   justify-content: space-between;
-  display: flex;
-  width: 20%;
 `;
 
 const InfoBoxes = styled.div`
@@ -93,6 +90,10 @@ const InfoBoxes = styled.div`
   .farm-stat{
     background: rgba(0,0,0,0.75);
     color: #fff;
+  }
+
+  .paladin img{
+    max-width: 200px;
   }
 
   :nth-child(4n){
@@ -171,7 +172,9 @@ const Menu: React.FC<NavProps> = ({
        
        <InfoContainer>
          <InfoBoxes>
+           <div className="paladin">
             <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="150"/></Link>
+            </div>
          </InfoBoxes>
        </InfoContainer>
         <InfoContainer>

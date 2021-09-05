@@ -92,9 +92,6 @@ const InfoBoxes = styled.div`
     color: #fff;
   }
 
-  :nth-child(4n){
-    width: 100%;
-  }
 `;
 
 const Menu: React.FC<NavProps> = ({

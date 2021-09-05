@@ -89,6 +89,7 @@ const InfoBoxes = styled.div`
 
   .farm-stat{
     background: rgba(0,0,0,0.75);
+    color: #fff;
   }
 
   .paladin img{

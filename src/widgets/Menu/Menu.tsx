@@ -92,7 +92,7 @@ const InfoBoxes = styled.div`
     color: #fff;
   }
 
-  .paladin img{
+  .navBarImages img{
     max-width: 200px;
   }
 
@@ -163,16 +163,17 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Logo
-          isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={isDark}
-          href={homeLink?.href ?? "/"}
-        />
-       
+        <InfoContainer>
+         <InfoBoxes>
+         <div className="navBarImages">
+            <Link href="/" target="_blank"><img src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair" width="150"/></Link>
+         </div>
+         </InfoBoxes>
+       </InfoContainer>
+      
        <InfoContainer>
          <InfoBoxes>
-           <div className="paladin">
+           <div className="navBarImages">
             <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="150"/></Link>
             </div>
          </InfoBoxes>

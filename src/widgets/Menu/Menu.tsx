@@ -51,6 +51,7 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   margin-top: 112px;
   transition: margin-top 0.2s;
   transform: translate3d(0, 0, 0);
+  max-width: 100%;
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`

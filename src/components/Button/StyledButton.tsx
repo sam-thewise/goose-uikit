@@ -48,7 +48,8 @@ const getButtonVariantProp = (prop: keyof ButtonThemeVariant) => ({
 const StyledButton = styled.button<ButtonProps>`
   align-items: center;
   background-color: rgb(97,105,182);
-  border-radius: 16px;
+  border-radius: 8px;
+  border: none !important;
   box-shadow: ${getButtonVariantProp("boxShadow")};
   color: #efcd52;
   cursor: pointer;
@@ -66,7 +67,7 @@ const StyledButton = styled.button<ButtonProps>`
   padding: ${({ size }) => (size === "sm" ? "0 16px" : "0 24px")};
   transition: background-color 0.2s;
   opacity: ${({ isLoading }) => (isLoading ? 0.5 : 1)};
-  margin-top: 0;
+  margin-top: 0 !important;
 
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     background-color: #858dd9;

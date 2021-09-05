@@ -69,8 +69,7 @@ const StyledButton = styled.button<ButtonProps>`
   margin-top: 0;
 
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
-    background-color: ${getButtonVariantProp("backgroundHover")};
-    border-color: ${getButtonVariantProp("borderColorHover")};
+    background-color: #858dd9;
   }
 
   &:focus:not(:active) {
@@ -78,7 +77,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 
   &:active {
-    background-color: ${getButtonVariantProp("backgroundActive")};
+    background-color: rgb(97,105,182);
     box-shadow: ${getButtonVariantProp("boxShadowActive")};
   }
 

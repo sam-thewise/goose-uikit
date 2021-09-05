@@ -1889,7 +1889,7 @@ var Icon$P = function (props) {
 
 var Logo$1 = function (_a) {
     _a.isDark; __rest(_a, ["isDark"]);
-    return (React.createElement("image", { href: '/images/egg/LogoTextNewWhite.png' }));
+    return (React.createElement("img", { src: '/images/egg/LogoTextNewWhite.png', alt: 'The Dragon\'s Lair' }));
 };
 
 var Icon$Q = function (props) {

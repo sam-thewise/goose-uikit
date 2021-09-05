@@ -51,7 +51,7 @@ const StyledButton = styled.button<ButtonProps>`
   border-radius: 8px;
   border: none !important;
   box-shadow: ${getButtonVariantProp("boxShadow")};
-  color: #efcd52;
+  color: #fff;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;

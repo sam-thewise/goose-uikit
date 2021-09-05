@@ -72,7 +72,6 @@ const StyledButton = styled.button<ButtonProps>`
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     background-color: #858dd9;
     box-shadow: inset 0 -3px 1px 0 rgb(42 53 140 / 50%);
-    line-height: 20;
   }
 
   &:focus:not(:active) {

@@ -84,16 +84,12 @@ const InfoContainer = styled.div`
 `;
 
 const InfoBoxes = styled.div`
-  width: 48%;
+  width: 65%;
   margin-bottom: 2%;
 
   .farm-stat{
     background: rgba(0,0,0,0.75);
     color: #fff;
-  }
-
-  .navBarImages img{
-    max-width: 110px;
   }
 
   :nth-child(4n){
@@ -165,17 +161,17 @@ const Menu: React.FC<NavProps> = ({
       <StyledNav showMenu={showMenu}>
         <InfoContainer>
          <InfoBoxes>
-         <div className="navBarImages">
+    
             <Link href="/" target="_blank"><img src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
-         </div>
+         
          </InfoBoxes>
        </InfoContainer>
       
        <InfoContainer>
          <InfoBoxes>
-           <div className="navBarImages">
+           
             <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg"/></Link>
-            </div>
+            
          </InfoBoxes>
        </InfoContainer>
         <InfoContainer>

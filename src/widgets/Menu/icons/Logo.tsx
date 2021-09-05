@@ -5,7 +5,7 @@ import { SvgProps } from "../../../components/Svg/types";
 
 
 const LogoImage = styled.div`
-  margin-left: 16px;
+  margin-left: 24px;
 `;
 
 interface LogoProps extends SvgProps {

@@ -61,6 +61,7 @@ const MobileOnlyOverlay = styled(Overlay)`
 `;
 
 const PriceLink = styled.a`
+  margin-top: 4px;
   display: flex;
   align-items: center;
   svg {

@@ -161,12 +161,14 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
        
+       <InfoContainer>
+         <InfoBoxes>
+          <div className="paladin">
+            <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></Link>
+          </div>
+         </InfoBoxes>
+       </InfoContainer>
         <InfoContainer>
-          <InfoBoxes>
-            <div className="paladin">
-              <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></Link>
-            </div>
-          </InfoBoxes>
           <InfoBoxes>
             {cakePriceUsd ? (
               <PriceLink href={priceLink} target="_blank">

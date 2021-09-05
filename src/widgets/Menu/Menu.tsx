@@ -34,7 +34,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height:112px;
-  background-color: rgba(97,105,182,0.9);
+  background-color: rgba(97,105,182,0.65);
+  backdrop-filter: blur(8px);
   z-index: 20;
   border-bottom: 2px solid #efcd52;
   transform: translate3d(0, 0, 0);

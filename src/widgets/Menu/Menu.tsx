@@ -39,11 +39,13 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   z-index: 20;
   border-bottom: 2px solid #efcd52;
   transform: translate3d(0, 0, 0);
+  overflow: hidden;
 `;
 
 const BodyWrapper = styled.div`
   position: relative;
   display: flex;
+  overflow: overlay;
 `;
 
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
@@ -78,28 +80,17 @@ const PriceLink = styled.a`
 `;
 
 const InfoContainer = styled.div`
-  flex-wrap: wrap;
   justify-content: space-between;
-  display: flex;
-  width: 20%;
 `;
 
 const InfoBoxes = styled.div`
-  width: 48%;
-  margin-bottom: 2%;
+  width: 65%;
 
   .farm-stat{
     background: rgba(0,0,0,0.75);
     color: #fff;
   }
 
-  .paladin img{
-    max-width: 200px;
-  }
-
-  :nth-child(4n){
-    width: 100%;
-  }
 `;
 
 const Menu: React.FC<NavProps> = ({
@@ -164,18 +155,19 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Logo
-          isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={isDark}
-          href={homeLink?.href ?? "/"}
-        />
-       
+        <InfoContainer>
+         <InfoBoxes>
+    
+            <Link href="/" target="_blank"><img src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
+         
+         </InfoBoxes>
+       </InfoContainer>
+      
        <InfoContainer>
          <InfoBoxes>
-          <div className="paladin">
-            <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" width="200"/></Link>
-          </div>
+           
+            <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg"/></Link>
+            
          </InfoBoxes>
        </InfoContainer>
         <InfoContainer>

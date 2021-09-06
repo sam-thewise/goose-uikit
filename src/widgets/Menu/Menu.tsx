@@ -89,8 +89,6 @@ const InfoContainer = styled.div`
 `;
 
 const InfoBoxes = styled.div`
-  width: 65%;
-
   .farm-stat{
     background: rgba(0,0,0,0.75);
     color: #fff;
@@ -168,14 +166,12 @@ const Menu: React.FC<NavProps> = ({
           <InfoBoxes>
               <Link href="/" target="_blank"><img className="navImg" src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
           </InfoBoxes>
-          <InfoContainer>
             <InfoBoxes>
                 <Link href={paladinAuditLink} target="_blank"><img className="navImg" src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" alt="paladin audit"/></Link>
             </InfoBoxes>
             <InfoBoxes>
                 <Link href="https://rugdoc.io/project/the-dragons-lair/" target="_blank"><img className="navImg" src="/images/badge/rugdoc-kyc.png" alt="rugdoc audit/kyc"/></Link>
             </InfoBoxes>
-          </InfoContainer>
        </DLInfoContainer>
         <InfoContainer>
           <InfoBoxes>

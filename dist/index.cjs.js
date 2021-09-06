@@ -2662,7 +2662,7 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 |
 var PriceLink$1 = styled__default['default'].a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var DLInfoContainer = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  display: contents;\n"], ["\n  display: contents;\n"])));
 var InfoContainer = styled__default['default'].div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  justify-content: space-between;\n"], ["\n  justify-content: space-between;\n"])));
-var InfoBoxes = styled__default['default'].div(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  width: 65%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"], ["\n  width: 65%;\n\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"])));
+var InfoBoxes = styled__default['default'].div(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"], ["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"])));
 var Menu = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
@@ -2706,13 +2706,12 @@ var Menu = function (_a) {
                 React__default['default'].createElement(InfoBoxes, null,
                     React__default['default'].createElement(Link, { href: "/", target: "_blank" },
                         React__default['default'].createElement("img", { className: "navImg", src: '/images/egg/LogoTextNewWhite.png', alt: "The Dragon's Lair" }))),
-                React__default['default'].createElement(InfoContainer, null,
-                    React__default['default'].createElement(InfoBoxes, null,
-                        React__default['default'].createElement(Link, { href: paladinAuditLink, target: "_blank" },
-                            React__default['default'].createElement("img", { className: "navImg", src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", alt: "paladin audit" }))),
-                    React__default['default'].createElement(InfoBoxes, null,
-                        React__default['default'].createElement(Link, { href: "https://rugdoc.io/project/the-dragons-lair/", target: "_blank" },
-                            React__default['default'].createElement("img", { className: "navImg", src: "/images/badge/rugdoc-kyc.png", alt: "rugdoc audit/kyc" }))))),
+                React__default['default'].createElement(InfoBoxes, null,
+                    React__default['default'].createElement(Link, { href: paladinAuditLink, target: "_blank" },
+                        React__default['default'].createElement("img", { className: "navImg", src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", alt: "paladin audit" }))),
+                React__default['default'].createElement(InfoBoxes, null,
+                    React__default['default'].createElement(Link, { href: "https://rugdoc.io/project/the-dragons-lair/", target: "_blank" },
+                        React__default['default'].createElement("img", { className: "navImg", src: "/images/badge/rugdoc-kyc.png", alt: "rugdoc audit/kyc" })))),
             React__default['default'].createElement(InfoContainer, null,
                 React__default['default'].createElement(InfoBoxes, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: priceLink, target: "_blank" },
                     React__default['default'].createElement(Icon$v, { width: "42px", mr: "8px" }),

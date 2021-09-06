@@ -157,17 +157,16 @@ const Menu: React.FC<NavProps> = ({
       <StyledNav showMenu={showMenu}>
         <InfoContainer>
          <InfoBoxes>
-    
             <Link href="/" target="_blank"><img src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
-         
          </InfoBoxes>
        </InfoContainer>
       
        <InfoContainer>
          <InfoBoxes>
-           
             <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg"/></Link>
-            
+         </InfoBoxes>
+         <InfoBoxes>
+            <Link href="https://rugdoc.io/project/the-dragons-lair/" target="_blank"><img src="/images/badge/rugdoc-kyc.png"/></Link>
          </InfoBoxes>
        </InfoContainer>
         <InfoContainer>

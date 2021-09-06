@@ -159,9 +159,6 @@ const Menu: React.FC<NavProps> = ({
          <InfoBoxes>
             <Link href="/" target="_blank"><img src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
          </InfoBoxes>
-       </InfoContainer>
-      
-       <InfoContainer>
          <InfoBoxes>
             <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg"/></Link>
          </InfoBoxes>

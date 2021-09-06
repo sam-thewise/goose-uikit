@@ -2660,7 +2660,7 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 |
     return theme.mediaQueries.nav;
 });
 var PriceLink$1 = styled__default['default'].a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  margin-top: 4px;\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-var DLInfoContainer = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  display: contents;\n"], ["\n  display: contents;\n"])));
+var DLInfoContainer = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  display: contents;\n  \n  @media (max-width: 420px) {\n    .badges {\n      display : block;\n    }\n}\n"], ["\n  display: contents;\n  \n  @media (max-width: 420px) {\n    .badges {\n      display : block;\n    }\n}\n"])));
 var InfoContainer = styled__default['default'].div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  justify-content: space-between;\n"], ["\n  justify-content: space-between;\n"])));
 var InfoBoxes = styled__default['default'].div(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"], ["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"])));
 var Menu = function (_a) {
@@ -2706,7 +2706,7 @@ var Menu = function (_a) {
                 React__default['default'].createElement(InfoBoxes, null,
                     React__default['default'].createElement(Link, { href: "/", target: "_blank" },
                         React__default['default'].createElement("img", { className: "navImg", src: '/images/egg/LogoTextNewWhite.png', alt: "The Dragon's Lair" }))),
-                React__default['default'].createElement(InfoContainer, null,
+                React__default['default'].createElement("div", { className: "badges" },
                     React__default['default'].createElement(InfoBoxes, null,
                         React__default['default'].createElement(Link, { href: paladinAuditLink, target: "_blank" },
                             React__default['default'].createElement("img", { className: "navImg", src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", alt: "paladin audit" }))),

@@ -2712,7 +2712,7 @@ var Menu = function (_a) {
                             React__default['default'].createElement("img", { className: "navImg", src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", alt: "paladin audit" }))),
                     React__default['default'].createElement(InfoBoxes, null,
                         React__default['default'].createElement(Link, { href: "https://rugdoc.io/project/the-dragons-lair/", target: "_blank" },
-                            React__default['default'].createElement("img", { className: "navImg", src: "/images/badge/", alt: "rugdoc audit/kyc" }))))),
+                            React__default['default'].createElement("img", { className: "navImg", src: "/images/badge/rugdoc-kyc.png", alt: "rugdoc audit/kyc" }))))),
             React__default['default'].createElement(InfoContainer, null,
                 React__default['default'].createElement(InfoBoxes, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: priceLink, target: "_blank" },
                     React__default['default'].createElement(Icon$v, { width: "42px", mr: "8px" }),

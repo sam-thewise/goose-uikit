@@ -79,6 +79,11 @@ const PriceLink = styled.a`
   }
 `;
 
+
+const DLInfoContainer = styled.div`
+  display: contents;
+`;
+
 const InfoContainer = styled.div`
   justify-content: space-between;
 `;
@@ -89,6 +94,10 @@ const InfoBoxes = styled.div`
   .farm-stat{
     background: rgba(0,0,0,0.75);
     color: #fff;
+  }
+
+  .navImg{
+    max-width: 70%
   }
 
 `;
@@ -155,17 +164,19 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <InfoContainer>
-         <InfoBoxes>
-            <Link href="/" target="_blank"><img src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
-         </InfoBoxes>
-         <InfoBoxes>
-            <Link href={paladinAuditLink} target="_blank"><img src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg"/></Link>
-         </InfoBoxes>
-         <InfoBoxes>
-            <Link href="https://rugdoc.io/project/the-dragons-lair/" target="_blank"><img src="/images/badge/rugdoc-kyc.png"/></Link>
-         </InfoBoxes>
-       </InfoContainer>
+        <DLInfoContainer>
+          <InfoBoxes>
+              <Link href="/" target="_blank"><img className="navImg" src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
+          </InfoBoxes>
+          <InfoContainer>
+            <InfoBoxes>
+                <Link href={paladinAuditLink} target="_blank"><img className="navImg" src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" alt="paladin audit"/></Link>
+            </InfoBoxes>
+            <InfoBoxes>
+                <Link href="https://rugdoc.io/project/the-dragons-lair/" target="_blank"><img className="navImg" src="/images/badge/" alt="rugdoc audit/kyc"/></Link>
+            </InfoBoxes>
+          </InfoContainer>
+       </DLInfoContainer>
         <InfoContainer>
           <InfoBoxes>
             {cakePriceUsd ? (

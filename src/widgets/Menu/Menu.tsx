@@ -82,6 +82,10 @@ const PriceLink = styled.a`
 
 const DLInfoContainer = styled.div`
   display: contents;
+
+  .badges {
+    display: contents;
+  }
   
   @media (max-width: 420px) {
     .badges {

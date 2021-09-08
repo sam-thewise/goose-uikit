@@ -161,8 +161,7 @@ const MenuIconDiv = styled.div`
 
   @media (max-width: 820px) {
     .menu-icons {
-      grid-template-columns : none;
-      width: 70%;
+      display : contents;
     }
   }
 `

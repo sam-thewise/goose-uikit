@@ -2652,7 +2652,7 @@ var InfoContainer = styled.div(templateObject_8 || (templateObject_8 = __makeTem
 var InfoBoxes = styled.div(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"], ["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"])));
 var MenuWrapper = styled.div(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n  position: fixed;\n  background: #000000e8;\n  padding: 0;\n  border-radius: 5px;\n  text-align: center;\n  backdrop-filter: blur(3px);\n  display: grid;\n  grid-template-columns: repeat(5,1fr);\n  width: 100%;\n  bottom: 0;\n  z-index: 999;\n  align-items: center;\n  justify-items: center;\n"], ["\n  position: fixed;\n  background: #000000e8;\n  padding: 0;\n  border-radius: 5px;\n  text-align: center;\n  backdrop-filter: blur(3px);\n  display: grid;\n  grid-template-columns: repeat(5,1fr);\n  width: 100%;\n  bottom: 0;\n  z-index: 999;\n  align-items: center;\n  justify-items: center;\n"])));
 var StyledLinkTag = styled.a(templateObject_11 || (templateObject_11 = __makeTemplateObject(["\n    display: grid;\n    text-align: center;\n    padding: 1px;\n    color: #fff;\n    font-size: 20px;\n    height: auto;\n    margin: 0 9px 0 0;\n    width: 100%;\n    justify-items: left;\n    text-align: center;\n    grid-template-columns: 1fr;\n    align-items: center;\n    justify-items: center;\n    padding: 10px;\n    transition: all 200ms linear;\n"], ["\n    display: grid;\n    text-align: center;\n    padding: 1px;\n    color: #fff;\n    font-size: 20px;\n    height: auto;\n    margin: 0 9px 0 0;\n    width: 100%;\n    justify-items: left;\n    text-align: center;\n    grid-template-columns: 1fr;\n    align-items: center;\n    justify-items: center;\n    padding: 10px;\n    transition: all 200ms linear;\n"])));
-var MenuIconDiv = styled.div(templateObject_12 || (templateObject_12 = __makeTemplateObject(["\n  text-align: left;\n  display: grid;\n  grid-template-columns: 50px 1fr;\n  align-items: center;\n  width: 50%;\n\n  @media (max-width: 420px) {\n    .menu-text {\n      display : none;\n  }\n"], ["\n  text-align: left;\n  display: grid;\n  grid-template-columns: 50px 1fr;\n  align-items: center;\n  width: 50%;\n\n  @media (max-width: 420px) {\n    .menu-text {\n      display : none;\n  }\n"])));
+var MenuIconDiv = styled.div(templateObject_12 || (templateObject_12 = __makeTemplateObject(["\n  text-align: left;\n  display: grid;\n  grid-template-columns: 50px 1fr;\n  align-items: center;\n  width: 50%;\n\n  @media (max-width: 820px) {\n    .menu-text {\n      display : none;\n      margin-left: 10%;\n\n    .menu-icons {\n      grid-template-columns : none;\n      width: 70%;\n    }\n  }\n"], ["\n  text-align: left;\n  display: grid;\n  grid-template-columns: 50px 1fr;\n  align-items: center;\n  width: 50%;\n\n  @media (max-width: 820px) {\n    .menu-text {\n      display : none;\n      margin-left: 10%;\n\n    .menu-icons {\n      grid-template-columns : none;\n      width: 70%;\n    }\n  }\n"])));
 var Menu = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
@@ -2716,23 +2716,26 @@ var Menu = function (_a) {
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" })),
         React.createElement(MenuWrapper, null,
             React.createElement(StyledLinkTag, { href: "https://t.me/thedragonslairfarm", target: "_blank" },
-                React.createElement(MenuIconDiv, null,
+                React.createElement(MenuIconDiv, { className: "menu-icons" },
                     React.createElement("img", { alt: "telegram", src: "https://image.flaticon.com/icons/png/512/124/124019.png" }),
+                    " ",
                     React.createElement("span", { className: "menu-text" }, "TELEGRAM"))),
             React.createElement(StyledLinkTag, { href: "https://twitter.com/DRGNCRYPTOGAMIN", target: "_blank" },
-                React.createElement(MenuIconDiv, null,
+                React.createElement(MenuIconDiv, { className: "menu-icons" },
                     React.createElement("img", { alt: "twitter", src: "https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" }),
+                    " ",
                     React.createElement("span", { className: "menu-text" }, "TWITTER"))),
             React.createElement(StyledLinkTag, { href: "https://docs.thedragonslair.farm/", target: "_blank" },
-                React.createElement(MenuIconDiv, null,
+                React.createElement(MenuIconDiv, { className: "menu-icons" },
                     React.createElement("img", { alt: "docs", src: "https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Doc_-_Google_Docs.png" }),
+                    " ",
                     React.createElement("span", { className: "menu-text" }, "DOCS"))),
             React.createElement(StyledLinkTag, { href: "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9", target: "_blank" },
-                React.createElement(MenuIconDiv, null,
+                React.createElement(MenuIconDiv, { className: "menu-icons" },
                     React.createElement("img", { alt: "charts", src: "https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/chart_candlestick.png" }),
                     React.createElement("span", { className: "menu-text" }, "CHART"))),
             React.createElement(StyledLinkTag, { href: "https://www.traderjoexyz.com/#/trade?outputCurrency=0x88c090496125b751B4E3ce4d3FDB8E47DD079c57", target: "_blank" },
-                React.createElement(MenuIconDiv, null,
+                React.createElement(MenuIconDiv, { className: "menu-icons" },
                     React.createElement("img", { alt: "exchange", src: "/images/menu/tjoe.png" }),
                     React.createElement("span", { className: "menu-text" }, "EXCHANGE"))))));
 };

@@ -153,9 +153,15 @@ const MenuIconDiv = styled.div`
   align-items: center;
   width: 50%;
 
-  @media (max-width: 420px) {
+  @media (max-width: 820px) {
     .menu-text {
       display : none;
+      margin-left: 10%;
+
+    .menu-icons {
+      grid-template-columns : none;
+      width: 70%;
+    }
   }
 `
 
@@ -275,27 +281,27 @@ const Menu: React.FC<NavProps> = ({
       </BodyWrapper>
       <MenuWrapper>
           <StyledLinkTag href="https://t.me/thedragonslairfarm" target="_blank">
-            <MenuIconDiv>
-                <img alt="telegram" src="https://image.flaticon.com/icons/png/512/124/124019.png"/><span className="menu-text">TELEGRAM</span>
+            <MenuIconDiv className="menu-icons">
+                <img alt="telegram" src="https://image.flaticon.com/icons/png/512/124/124019.png"/> <span className="menu-text">TELEGRAM</span>
             </MenuIconDiv>
           </StyledLinkTag>
           <StyledLinkTag href="https://twitter.com/DRGNCRYPTOGAMIN" target="_blank">
-            <MenuIconDiv>
-                <img alt="twitter" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png"/><span className="menu-text">TWITTER</span>
+            <MenuIconDiv className="menu-icons">
+                <img alt="twitter" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png"/> <span className="menu-text">TWITTER</span>
             </MenuIconDiv>
           </StyledLinkTag>
           <StyledLinkTag href="https://docs.thedragonslair.farm/" target="_blank">
-            <MenuIconDiv>
-              <img alt="docs" src="https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Doc_-_Google_Docs.png"/><span className="menu-text">DOCS</span>
+            <MenuIconDiv className="menu-icons">
+              <img alt="docs" src="https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Doc_-_Google_Docs.png"/> <span className="menu-text">DOCS</span>
             </MenuIconDiv>
           </StyledLinkTag>
           <StyledLinkTag href="https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9" target="_blank">
-            <MenuIconDiv>
+            <MenuIconDiv className="menu-icons">
               <img alt="charts" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/chart_candlestick.png"/><span className="menu-text">CHART</span>
             </MenuIconDiv>
           </StyledLinkTag>
           <StyledLinkTag href="https://www.traderjoexyz.com/#/trade?outputCurrency=0x88c090496125b751B4E3ce4d3FDB8E47DD079c57" target="_blank">
-            <MenuIconDiv>
+            <MenuIconDiv className="menu-icons">
                 <img alt="exchange" src="/images/menu/tjoe.png"/><span className="menu-text">EXCHANGE</span>
             </MenuIconDiv>
           </StyledLinkTag>

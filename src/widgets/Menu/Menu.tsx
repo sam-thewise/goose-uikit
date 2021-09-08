@@ -125,6 +125,7 @@ const MenuWrapper = styled.div`
   z-index: 999;
   align-items: center;
   justify-items: center;
+  border-top: 1px solid #efcd52;
 `
 
 const StyledLinkTag = styled.a`

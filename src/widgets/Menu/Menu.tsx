@@ -159,7 +159,7 @@ const MenuIconDiv = styled.div`
       margin-left: 10%;
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: 540px) {
     .menu-icons {
       display : contents;
     }

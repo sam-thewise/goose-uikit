@@ -116,7 +116,6 @@ const MenuWrapper = styled.div`
   position: fixed;
   background: #000000e8;
   padding: 0;
-  border-radius: 5px;
   text-align: center;
   backdrop-filter: blur(3px);
   display: grid;
@@ -135,7 +134,6 @@ const StyledLinkTag = styled.a`
     color: #fff;
     font-size: 20px;
     height: auto;
-    margin: 0 9px 0 0;
     width: 100%;
     justify-items: left;
     text-align: center;
@@ -157,9 +155,9 @@ const StyledLinkTag = styled.a`
       margin-left: 10%;
     }
   
-    @media (max-width: 420px) {
+    @media (max-width: 540px) {
       .menu-icons {
-        display : contents;
+        display : block;
       }
     }
   

@@ -2650,6 +2650,8 @@ var PriceLink$1 = styled.a(templateObject_6 || (templateObject_6 = __makeTemplat
 var DLInfoContainer = styled.div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  display: contents;\n\n  .badges {\n    display: contents;\n  }\n  \n  @media (max-width: 420px) {\n    .badges {\n      display : block;\n    }\n}\n"], ["\n  display: contents;\n\n  .badges {\n    display: contents;\n  }\n  \n  @media (max-width: 420px) {\n    .badges {\n      display : block;\n    }\n}\n"])));
 var InfoContainer = styled.div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  justify-content: space-between;\n"], ["\n  justify-content: space-between;\n"])));
 var InfoBoxes = styled.div(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"], ["\n  .farm-stat{\n    background: rgba(0,0,0,0.75);\n    color: #fff;\n  }\n\n  .navImg{\n    max-width: 70%\n  }\n\n"])));
+var StickySideBar = styled.div(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n  position: fixed;\n  top: 150px;\n  left: 0;\n"], ["\n  position: fixed;\n  top: 150px;\n  left: 0;\n"])));
+var StickyIcons = styled.a(templateObject_11 || (templateObject_11 = __makeTemplateObject(["\n  display: block;\n  text-align: center;\n  padding: 1px;\n  color: white;\n  font-size: 20px;\n  max-width: 38px;\n  height: auto;\n"], ["\n  display: block;\n  text-align: center;\n  padding: 1px;\n  color: white;\n  font-size: 20px;\n  max-width: 38px;\n  height: auto;\n"])));
 var Menu = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, paladinAuditLink = _a.paladinAuditLink; _a.rugDocLink; _a.totalTVL; _a.circSupply; _a.marketCap; _a.eggPerBlock; var children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
@@ -2707,12 +2709,23 @@ var Menu = function (_a) {
                 React.createElement(InfoBoxes, null,
                     React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                     profile && React.createElement(Avatar, { profile: profile })))),
+        React.createElement(StickySideBar, null,
+            React.createElement(StickyIcons, { href: "https://t.me/thedragonslairfarm", target: "_blank" },
+                React.createElement("img", { alt: "telegram", src: "https://image.flaticon.com/icons/png/512/124/124019.png" })),
+            React.createElement(StickyIcons, { href: "https://twitter.com/DRGNCRYPTOGAMIN", target: "_blank" },
+                React.createElement("img", { alt: "twitter", src: "https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" })),
+            React.createElement(StickyIcons, { href: "https://docs.thedragonslair.farm/", target: "_blank" },
+                React.createElement("img", { alt: "docs", src: "https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Doc_-_Google_Docs.png" })),
+            React.createElement(StickyIcons, { href: "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9", target: "_blank" },
+                React.createElement("img", { alt: "charts", src: "https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/chart_candlestick.png" })),
+            React.createElement(StickyIcons, { href: "https://www.traderjoexyz.com/#/trade?outputCurrency=0x88c090496125b751B4E3ce4d3FDB8E47DD079c57", target: "_blank" },
+                React.createElement("img", { alt: "exchange", src: "/images/menu/tjoe.png" }))),
         React.createElement(BodyWrapper, null,
             React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8, templateObject_9;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11;
 
 var ToastAction = function (_a) {
     var action = _a.action;

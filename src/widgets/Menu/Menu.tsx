@@ -157,7 +157,7 @@ const StyledLinkTag = styled.a`
       margin-left: 10%;
     }
   
-    @media (max-width: 540px) {
+    @media (max-width: 420px) {
       .menu-icons {
         display : contents;
       }

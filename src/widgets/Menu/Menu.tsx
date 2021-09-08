@@ -143,6 +143,10 @@ const StyledLinkTag = styled.a`
     padding: 10px;
     transition: all 200ms linear;
 
+    &:hover {
+      background-color: rgba(97,105,182,0.45);
+    }
+
     .menu-icons{
       text-align: left;
       display: grid;

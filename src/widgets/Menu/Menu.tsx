@@ -155,7 +155,7 @@ const StyledLinkTag = styled.a`
 
   @media (max-width: 420px) {
     .menu-text {
-      display : block;
+      display : none;
   }
 `
 

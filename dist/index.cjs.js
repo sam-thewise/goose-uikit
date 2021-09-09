@@ -2706,7 +2706,7 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(DLInfoContainer, null,
                 React__default['default'].createElement(InfoBoxes, null,
-                    React__default['default'].createElement(Link, { href: "/", target: "_blank" },
+                    React__default['default'].createElement(Link, { href: "https://dex.guru/token/0x88c090496125b751b4e3ce4d3fdb8e47dd079c57-avalanche", target: "_blank" },
                         React__default['default'].createElement("img", { className: "navImg", src: '/images/egg/LogoTextNewWhite.png', alt: "The Dragon's Lair" }))),
                 React__default['default'].createElement("div", { className: "badges" },
                     React__default['default'].createElement(InfoBoxes, null,

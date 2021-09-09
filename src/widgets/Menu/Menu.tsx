@@ -241,7 +241,7 @@ const Menu: React.FC<NavProps> = ({
       <StyledNav showMenu={showMenu}>
         <DLInfoContainer>
           <InfoBoxes>
-              <Link href="/" target="_blank"><img className="navImg" src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
+              <Link href="https://dex.guru/token/0x88c090496125b751b4e3ce4d3fdb8e47dd079c57-avalanche" target="_blank"><img className="navImg" src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
           </InfoBoxes>
           
           <div className="badges">

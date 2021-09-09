@@ -236,12 +236,14 @@ const Menu: React.FC<NavProps> = ({
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
 
+  const dexGuru = "https://dex.guru/token/0x88c090496125b751b4e3ce4d3fdb8e47dd079c57-avalanche"
+
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
         <DLInfoContainer>
           <InfoBoxes>
-              <Link href="https://dex.guru/token/0x88c090496125b751b4e3ce4d3fdb8e47dd079c57-avalanche" target="_blank"><img className="navImg" src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
+              <Link href="/" target="_blank"><img className="navImg" src='/images/egg/LogoTextNewWhite.png' alt="The Dragon's Lair"/></Link>
           </InfoBoxes>
           
           <div className="badges">
@@ -257,7 +259,7 @@ const Menu: React.FC<NavProps> = ({
         <InfoContainer>
           <InfoBoxes>
             {cakePriceUsd ? (
-              <PriceLink href={priceLink} target="_blank">
+              <PriceLink href={dexGuru} target="_blank">
                 <PancakeRoundIcon width="42px" mr="8px" />
                 <Text color="textSubtle" fontSize="21px">{`$${cakePriceUsd.toFixed(3)}`}</Text>
               </PriceLink>

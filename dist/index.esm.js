@@ -2729,7 +2729,7 @@ var Menu = function (_a) {
                     React.createElement("img", { className: "menu-pic", alt: "docs", src: "https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Doc_-_Google_Docs.png" }),
                     " ",
                     React.createElement("span", { className: "menu-text" }, "DOCS"))),
-            React.createElement(StyledLinkTag, { href: "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9", target: "_blank" },
+            React.createElement(StyledLinkTag, { href: "https://dex.guru/token/0x88c090496125b751b4e3ce4d3fdb8e47dd079c57-avalanche", target: "_blank" },
                 React.createElement("div", { className: "menu-icons" },
                     React.createElement("img", { className: "menu-pic", alt: "charts", src: "https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/chart_candlestick.png" }),
                     React.createElement("span", { className: "menu-text" }, "CHART"))),

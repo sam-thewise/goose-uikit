@@ -307,7 +307,7 @@ const Menu: React.FC<NavProps> = ({
               <img className="menu-pic" alt="docs" src="https://cdn2.iconfinder.com/data/icons/metro-ui-dock/512/Doc_-_Google_Docs.png"/> <span className="menu-text">DOCS</span>
             </div>
           </StyledLinkTag>
-          <StyledLinkTag href="https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9" target="_blank">
+          <StyledLinkTag href="https://dex.guru/token/0x88c090496125b751b4e3ce4d3fdb8e47dd079c57-avalanche" target="_blank">
             <div className="menu-icons">
               <img className="menu-pic" alt="charts" src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/chart_candlestick.png"/><span className="menu-text">CHART</span>
             </div>

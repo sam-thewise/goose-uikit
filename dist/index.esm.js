@@ -2689,7 +2689,7 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     links.find(function (link) { return link.label === "Home"; });
-    var dexGuru = "https://dex.guru/token/0x88c090496125b751b4e3ce4d3fdb8e47dd079c57-avalanche";
+    var dexGuru = "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9";
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(DLInfoContainer, null,
@@ -2737,7 +2737,11 @@ var Menu = function (_a) {
             React.createElement(StyledLinkTag, { href: "https://www.traderjoexyz.com/#/trade?outputCurrency=0x88c090496125b751B4E3ce4d3FDB8E47DD079c57", target: "_blank" },
                 React.createElement("div", { className: "menu-icons" },
                     React.createElement("img", { className: "menu-pic", alt: "exchange", src: "/images/menu/tjoe.png" }),
-                    React.createElement("span", { className: "menu-text" }, "EXCHANGE"))))));
+                    React.createElement("span", { className: "menu-text" }, "EXCHANGE"))),
+            React.createElement(StyledLinkTag, { href: "https://vfat.tools/avax/dregg/", target: "_blank" },
+                React.createElement("div", { className: "menu-icons" },
+                    React.createElement("img", { className: "menu-pic", alt: "vfat", src: "/images/menu/vfaticon.jpg" }),
+                    React.createElement("span", { className: "menu-text" }, "VFAT"))))));
 };
 var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11;
 

@@ -319,6 +319,11 @@ const Menu: React.FC<NavProps> = ({
                 <img className="menu-pic" alt="exchange" src="/images/menu/tjoe.png"/><span className="menu-text">EXCHANGE</span>
             </div>
           </StyledLinkTag>
+          <StyledLinkTag href="https://vfat.tools/avax/dregg/" target="_blank">
+            <div className="menu-icons">
+                <img className="menu-pic" alt="vfat" src="/images/menu/vfaticon.jpg"/><span className="menu-text">VFAT</span>
+            </div>
+          </StyledLinkTag>
       </MenuWrapper>
     </Wrapper>
   );

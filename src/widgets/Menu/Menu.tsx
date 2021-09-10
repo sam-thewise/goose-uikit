@@ -119,7 +119,7 @@ const MenuWrapper = styled.div`
   text-align: center;
   backdrop-filter: blur(3px);
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(6,1fr);
   width: 100%;
   bottom: 0;
   z-index: 999;
@@ -167,6 +167,7 @@ const StyledLinkTag = styled.a`
     @media (max-width: 540px) {
       .menu-icons {
         display : block;
+        width: 73%;
       }
     }
   

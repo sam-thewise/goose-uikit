@@ -119,7 +119,7 @@ const MenuWrapper = styled.div`
   text-align: center;
   backdrop-filter: blur(3px);
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(6,1fr);
   width: 100%;
   bottom: 0;
   z-index: 999;
@@ -167,6 +167,7 @@ const StyledLinkTag = styled.a`
     @media (max-width: 540px) {
       .menu-icons {
         display : block;
+        width: 73%;
       }
     }
   
@@ -317,6 +318,11 @@ const Menu: React.FC<NavProps> = ({
           <StyledLinkTag href="https://www.traderjoexyz.com/#/trade?outputCurrency=0x88c090496125b751B4E3ce4d3FDB8E47DD079c57" target="_blank">
             <div className="menu-icons">
                 <img className="menu-pic" alt="exchange" src="/images/menu/tjoe.png"/><span className="menu-text">EXCHANGE</span>
+            </div>
+          </StyledLinkTag>
+          <StyledLinkTag href="https://vfat.tools/avax/dregg/" target="_blank">
+            <div className="menu-icons">
+                <img className="menu-pic" alt="vfat" src="/images/menu/vfaticon.jpg"/><span className="menu-text">VFAT</span>
             </div>
           </StyledLinkTag>
       </MenuWrapper>

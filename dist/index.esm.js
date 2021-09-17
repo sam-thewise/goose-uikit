@@ -2689,7 +2689,7 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     links.find(function (link) { return link.label === "Home"; });
-    var dexGuru = "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9";
+    var chartEx = "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9&interval=15&theme=dark";
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(DLInfoContainer, null,
@@ -2704,7 +2704,7 @@ var Menu = function (_a) {
                         React.createElement(Link, { href: paladinAuditLink, target: "_blank" },
                             React.createElement("img", { className: "navImg", src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", alt: "paladin audit" }))))),
             React.createElement(InfoContainer, null,
-                React.createElement(InfoBoxes, null, cakePriceUsd ? (React.createElement(PriceLink$1, { href: dexGuru, target: "_blank" },
+                React.createElement(InfoBoxes, null, cakePriceUsd ? (React.createElement(PriceLink$1, { href: chartEx, target: "_blank" },
                     React.createElement(Icon$v, { width: "42px", mr: "8px" }),
                     React.createElement(Text, { color: "textSubtle", fontSize: "21px" }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
                 React.createElement(InfoBoxes, null,

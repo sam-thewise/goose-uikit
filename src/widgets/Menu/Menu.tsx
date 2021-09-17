@@ -237,7 +237,7 @@ const Menu: React.FC<NavProps> = ({
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
 
-  const dexGuru = "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9"
+  const chartEx = "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9&interval=15&theme=dark"
 
   return (
     <Wrapper>
@@ -260,7 +260,7 @@ const Menu: React.FC<NavProps> = ({
         <InfoContainer>
           <InfoBoxes>
             {cakePriceUsd ? (
-              <PriceLink href={dexGuru} target="_blank">
+              <PriceLink href={chartEx} target="_blank">
                 <PancakeRoundIcon width="42px" mr="8px" />
                 <Text color="textSubtle" fontSize="21px">{`$${cakePriceUsd.toFixed(3)}`}</Text>
               </PriceLink>

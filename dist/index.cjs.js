@@ -2702,7 +2702,7 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     links.find(function (link) { return link.label === "Home"; });
-    var dexGuru = "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9";
+    var chartEx = "https://chartex.pro/?symbol=AVAX_TRADERJOE%3ADREGG%2FUSDTe.0xB52a2b91Bf89BcB9435ad94D23555EaD26954CA9&interval=15&theme=dark";
     return (React__default['default'].createElement(Wrapper$1, null,
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(DLInfoContainer, null,
@@ -2717,7 +2717,7 @@ var Menu = function (_a) {
                         React__default['default'].createElement(Link, { href: paladinAuditLink, target: "_blank" },
                             React__default['default'].createElement("img", { className: "navImg", src: "https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg", alt: "paladin audit" }))))),
             React__default['default'].createElement(InfoContainer, null,
-                React__default['default'].createElement(InfoBoxes, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: dexGuru, target: "_blank" },
+                React__default['default'].createElement(InfoBoxes, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink$1, { href: chartEx, target: "_blank" },
                     React__default['default'].createElement(Icon$v, { width: "42px", mr: "8px" }),
                     React__default['default'].createElement(Text, { color: "textSubtle", fontSize: "21px" }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
                 React__default['default'].createElement(InfoBoxes, null,

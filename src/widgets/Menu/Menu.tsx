@@ -109,6 +109,10 @@ const InfoBoxes = styled.div`
     max-width: 70%
   }
 
+  .tinyDragons{
+    max-height: 121px;
+  }
+
 `;
 
 
@@ -255,7 +259,7 @@ const Menu: React.FC<NavProps> = ({
                   <Link href={paladinAuditLink} target="_blank"><img className="navImg" src="https://paladinsec.co/pld/assets/audited-by-paladin-standard.svg" alt="paladin audit"/></Link>
               </InfoBoxes>
               <InfoBoxes>
-                  <Link href="https://tinydragon.games/" target="_blank"><img className="navImg" src="https://tinydragon.games/img/logo.png" alt="Tiny Dragons!"/></Link>
+                  <Link href="https://tinydragon.games/" target="_blank"><img className="navImg tinyDragons" src="https://tinydragon.games/img/logo.png" alt="Tiny Dragons!"/></Link>
               </InfoBoxes>
           </div>
             

@@ -122,7 +122,7 @@ const MenuWrapper = styled.div`
   padding: 0;
   text-align: center;
   backdrop-filter: blur(3px);
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(6,1fr);
   width: 100%;
   bottom: 0;

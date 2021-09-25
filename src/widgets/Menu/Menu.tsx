@@ -302,6 +302,11 @@ const Menu: React.FC<NavProps> = ({
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>
       <MenuWrapper>
+          <StyledLinkTag href="https://discord.gg/EjtYmpSPVJ" target="_blank">
+            <div className="menu-icons">
+                <img className="menu-pic" alt="discord" src="https://apksshare.com/wp-content/uploads/2021/06/Discord-Talk-Video-Chat-Hang-Out-with-Friends-APK-MOD-Download-77.6-Stable.png"/> <span className="menu-text">DISCORD</span>
+            </div>
+          </StyledLinkTag>
           <StyledLinkTag href="https://t.me/thedragonslairfarm" target="_blank">
             <div className="menu-icons">
                 <img className="menu-pic" alt="telegram" src="https://image.flaticon.com/icons/png/512/124/124019.png"/> <span className="menu-text">TELEGRAM</span>
